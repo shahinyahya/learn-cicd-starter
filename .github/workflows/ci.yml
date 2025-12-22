@@ -17,6 +17,10 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: "1.25.1"
+      
+      - name: GetAPIKey
+        run: |
+          go test ./...
 
       - name: Force Failure
         run: go version
