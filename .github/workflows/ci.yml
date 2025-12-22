@@ -21,6 +21,3 @@ jobs:
       - name: GetAPIKey
         run: |
           go test ./...
-
-      - name: Force Failure
-        run: go version
