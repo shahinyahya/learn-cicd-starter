@@ -18,6 +18,10 @@ jobs:
         with:
           go-version: "1.25.1"
       
+      - name: Format code
+        run: |
+          go fmt ./...
+      
       - name: GetAPIKey
         run: |
           go test -cover ./...
